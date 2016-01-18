@@ -79,7 +79,15 @@
 <blockquote>
 <p>数值的每一位都由0~9组成，共有10种状态，逢十进一，为<strong>十进制</strong></p>
 </blockquote>
-<p>二进制在生活中可以说基本用不到，但是它是计算机底层的编码组成，就是所谓的<strong>机器语言</strong>。同样二进制的理解可以这样：
+<p>二进制在生活中可以说基本用不到，但是它是计算机底层的编码组成，就是所谓的<strong>机器语言</strong>。同样二进制的理解可以这样：</p>
+<blockquote>
+<p>数值的每一位都由0和1两种状态组成，逢二进一，为<strong>二进制</strong></p>
+</blockquote>
+<h2 id="5B_u4E8C_u8FDB_u5236_5D-_26gt_3B_5B_u5341_u8FDB_u5236_5D"><a href="#5B_u4E8C_u8FDB_u5236_5D-_26gt_3B_5B_u5341_u8FDB_u5236_5D" class="headerlink" title="[二进制]-&gt;[十进制]"></a><strong>[二进制]-&gt;[十进制]</strong></h2><p>当然，二进制和十进制一样，能够表示正数也能够表示负数，我们这里只讨论基本的<strong>正整数</strong>的进制转换，不涉及负数和小数。我们先来看一个十进制整数650分解到每一位后的表示方法：<br><em>650<br>=600+50+0 （百、十、个）<br>=6×100+5×10+0×1<br>=6×10^2+5×10^1+0×10^0（注意10^2表示10的2次方）</em></p>
+<p>从上面的分解过程我们可以将<strong>每一位上的数</strong>归纳为以下公式</p>
+<blockquote>
+<h4 id="3Dm_D710_5En"><a href="#3Dm_D710_5En" class="headerlink" title="=m×10^n"></a>=m×10^n</h4><p>：<strong>m表示当前位的值，n表示当前位右边有n个数。</strong></p>
+</blockquote>
     
   </div>
   <footer class="end-sep">
@@ -88,48 +96,6 @@
         <div class="alignleft">
           <a href="/2016/01/17/twototen/#more" class="more-link">阅读全文</a>
         </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2016/01/17/hello-world/">
-  <time datetime="2016-01-17T05:19:01.390Z">
-    Jan 17 2016
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2016/01/17/hello-world/">Hello World</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
       
       
     
