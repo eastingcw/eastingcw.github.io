@@ -36,7 +36,7 @@
 二进制在生活中可以说基本用不到，但是它是计算机底层的编码组成，就是所谓的机器语言。同样二进制的理解可以这样：
 
 数值的每一位都由0和1两种状态组成，逢二进一，为二进制">
-<meta property="og:updated_time" content="2016-01-18T08:06:07.015Z">
+<meta property="og:updated_time" content="2016-01-18T13:47:06.718Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二进制、十进制转换">
 <meta name="twitter:description" content="在讲转换之前，我们来了解下两种进制的概念。十进制是我们从小就开始学习的，可以说非常熟悉，之所以使用这么广泛，很有可能跟我们有十根手指有关。所谓【十进制】，就是：
@@ -69,7 +69,7 @@
       
         <li><a href="/archives">Archives</a></li>
       
-        <li><a href="/about">about</a></li>
+        <li><a href="/about">About</a></li>
       
       
     </ul>
@@ -107,12 +107,12 @@
 <h2 id="5B_u4E8C_u8FDB_u5236_5D-_26gt_3B_5B_u5341_u8FDB_u5236_5D"><a href="#5B_u4E8C_u8FDB_u5236_5D-_26gt_3B_5B_u5341_u8FDB_u5236_5D" class="headerlink" title="[二进制]-&gt;[十进制]"></a><strong>[二进制]-&gt;[十进制]</strong></h2><p>当然，二进制和十进制一样，能够表示正数也能够表示负数，我们这里只讨论基本的<strong>正整数</strong>的进制转换，不涉及负数和小数。我们先来看一个十进制整数650分解到每一位后的表示方法：<br><em>650<br>=600+50+0 （百、十、个）<br>=6×100+5×10+0×1<br>=6×10^2+5×10^1+0×10^0（注意10^2表示10的2次方）</em></p>
 <p>从上面的分解过程我们可以将<strong>每一位上的数</strong>归纳为以下公式</p>
 <blockquote>
-<h4 id="3Dm_D710_5En"><a href="#3Dm_D710_5En" class="headerlink" title="=m×10^n"></a>=m×10^n</h4><p>：<strong>m表示当前位的值，n表示当前位右边有n个数。</strong></p>
+<p>=m×10^n<br>：<strong>m表示当前位的值，n表示当前位右边有n个数。</strong></p>
 </blockquote>
 <a id="more"></a>
 <p><em>例如</em>：百位6×10^2的理解就是当前位数值m是6，指数2表示当前百位右边还有2个数。<br>十进制是以10为底的指数，同样，二进制不同就是以2为底的指数，二进制的每一位表示公式如下：</p>
 <blockquote>
-<h4 id="3Dm_D72_5En"><a href="#3Dm_D72_5En" class="headerlink" title="=m×2^n"></a>=m×2^n</h4><p>：<strong>m表示当前位的值，n表示当前位右边有n个数。</strong></p>
+<p>=m×2^n<br>：<strong>m表示当前位的值，n表示当前位右边有n个数。</strong></p>
 </blockquote>
 <p>根据以上公式我们可以试着来转换一个二进制数值：<br><em>11011<br>=1×2^4+1×2^3+0×2^2+1×2^1+1×2^0<br>=2^4+2^3+2^1+2^0<br>=16+8+2+1<br>=27</em><br>从上面的计算我们可以看到，二进制只有0和1，所以我们一般计算的时候只要考虑有1的位，然后把他们求和就可以了。</p>
 <h2 id="5B_u5341_u8FDB_u5236_5D-_26gt_3B_5B_u4E8C_u8FDB_u5236_5D"><a href="#5B_u5341_u8FDB_u5236_5D-_26gt_3B_5B_u4E8C_u8FDB_u5236_5D" class="headerlink" title="[十进制]-&gt;[二进制]"></a><strong>[十进制]-&gt;[二进制]</strong></h2><p>十进制转二进制其实不止一种方法，有除二取余法、凑数法等等，这里我们介绍<strong>[凑数法]</strong>。那什么是凑数法呢？我们知道在二进制中，每一位都是2的指数幂，所以我们可以将一个十进制数先拆开，凑成几个2的指数的和，然后将拆开的数的指数填入对应二进制位。先来看个<em>例子</em>：<br><em>123<br>=64+32+16+8+2+1<br>=2^6+2^5+2^4+2^3+2^1+2^0<br>=2^(7-1)+2^(6-1)+2^(5-1)+2^(4-1)+2^(2-1)+2^(1-1)<br>=1111011</em></p>
@@ -129,7 +129,7 @@
 
       
   <div class="tags">
-    <a class="tags-link" href="/tags/二进制/">二进制</a>, <a class="tags-link" href="/tags/十进制/">十进制</a>, <a class="tags-link" href="/tags/计算机基础/">计算机基础</a>
+    <a class="tags-link" href="/tags/二进制/">二进制</a>, <a class="tags-link" href="/tags/十进制/">十进制</a>, <a class="tags-link" href="/tags/编程/">编程</a>
   </div>
 
     
