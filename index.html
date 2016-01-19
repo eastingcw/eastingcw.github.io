@@ -78,9 +78,33 @@
       <blockquote>
 <p><strong>getchar()</strong> : 在32位操作系统下，读取一个字节</p>
 </blockquote>
-<p><strong>[程序1]</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> c;  <span class="comment">//定义为int类型</span></span><br><span class="line">    c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(c);</span><br><span class="line">        c=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>[程序2]</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">char</span> c; <span class="comment">//定义为char类型</span></span><br><span class="line">    c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(c);</span><br><span class="line">        c=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>对比以上两个程序可以发现，定义变量c的地方不同，其余都一样。</p>
+<p><strong>[程序1]</strong></p>
+<pre><code>#include&lt;stdio.h&gt;
+main()
+{
+    int c;  //定义为int类型
+    c=getchar();
+    while(c!=EOF)
+    {
+        putchar(c);
+        c=getchar();
+    }
+    return 0;
+}
+</code></pre><p><strong>[程序2]</strong></p>
+<pre><code>#include&lt;stdio.h&gt;
+main()
+{
+    char c; //定义为char类型
+    c=getchar();
+    while(c!=EOF)
+    {
+        putchar(c);
+        c=getchar();
+    }
+    return 0;
+}
+</code></pre><p>对比以上两个程序可以发现，定义变量c的地方不同，其余都一样。</p>
 <pre><code>EOF是结束符（End Of File，文件结束）
 值必须足够大，除了能存储任何可能的字符外还要能存储文件结束符EOF。
 </code></pre><p><strong>char</strong> :  c/c++整型数据中比较古怪的一个，在标准中是unsigned。编辑器可实现为带符号的，也可实现为不带符号的。</p>
