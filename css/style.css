@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic,400,700");
 @font-face {
   font-family: 'FontAwesome';
   font-style: normal;
@@ -377,10 +376,10 @@ article .entry pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #333;
   font-size: 0.8em;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 article .entry code {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 article .entry pre {
   padding: 10px 30px;
@@ -397,56 +396,56 @@ article .entry pre {
 article .entry pre code {
   color: #f8f8f2;
 }
-li article .entry pre {
+li article overflow-x auto {
   margin-left: -60px;
   padding-left: 60px;
 }
-article .entry .gist article {
+article .gist article {
   padding: 10px;
 }
-article .entry .gist table {
+article .gist table {
   margin: 0;
 }
-article .entry .gist table td {
+article .gist table td {
   border-bottom: 0;
 }
-article .entry .gist table td.line-numbers {
+article .gist table td.line-numbers {
   font-size: 12px;
 }
-article .entry .gist pre {
+article .gist pre {
   margin: 0 -10px 16px;
   padding: 10px 20px;
   background: #f8f8f8;
   color: #333;
 }
-article .entry table {
+article table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 }
-article .entry th,
-article .entry td {
+article th,
+article td {
   text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid #aaa;
 }
-article .entry dt {
+article dt {
   color: #222;
   font-weight: 700;
 }
-article .entry th {
+article th {
   color: #222;
 }
-article .entry small {
+article small {
   font-size: 0.7em;
 }
-article .entry hr {
+article hr {
   border: 0;
   background: #aaa;
   height: 1px;
   margin: 0 0 20px;
 }
-article .entry .text-lt {
+article .text-lt {
   text-decoration: line-through;
 }
 article footer {
