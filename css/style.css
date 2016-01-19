@@ -117,7 +117,6 @@ strong {
 article {
   padding: 15px 30px;
   position: relative;
-  white-space: pre-wrap;
 }
 article.page .icon {
   display: none;
@@ -397,56 +396,56 @@ article .entry pre {
 article .entry pre code {
   color: #f8f8f2;
 }
-li article word-wrap break-word {
+li article .entry pre {
   margin-left: -60px;
   padding-left: 60px;
 }
-article .gist article {
+article .entry .gist article {
   padding: 10px;
 }
-article .gist table {
+article .entry .gist table {
   margin: 0;
 }
-article .gist table td {
+article .entry .gist table td {
   border-bottom: 0;
 }
-article .gist table td.line-numbers {
+article .entry .gist table td.line-numbers {
   font-size: 12px;
 }
-article .gist pre {
+article .entry .gist pre {
   margin: 0 -10px 16px;
   padding: 10px 20px;
   background: #f8f8f8;
   color: #333;
 }
-article table {
+article .entry table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 }
-article th,
-article td {
+article .entry th,
+article .entry td {
   text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid #aaa;
 }
-article dt {
+article .entry dt {
   color: #222;
   font-weight: 700;
 }
-article th {
+article .entry th {
   color: #222;
 }
-article small {
+article .entry small {
   font-size: 0.7em;
 }
-article hr {
+article .entry hr {
   border: 0;
   background: #aaa;
   height: 1px;
   margin: 0 0 20px;
 }
-article .text-lt {
+article .entry .text-lt {
   text-decoration: line-through;
 }
 article footer {
