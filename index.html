@@ -84,12 +84,10 @@
 <pre><code>EOF是结束符（End Of File，文件结束）
 值必须足够大，除了能存储任何可能的字符外还要能存储文件结束符EOF。
 </code></pre><p><strong>char</strong> :  c/c++整型数据中比较古怪的一个，在标准中是unsigned。编辑器可实现为带符号的，也可实现为不带符号的。</p>
-<blockquote>
 <ul>
 <li>char是<strong>signed</strong>的系统中：<br>EOF的值是-1，读取中文时，中断调试下，每次读取一个字节，定义为int时，变量c的值在0~127之外，＞127，定义为char时由于char是signed，所以能识别负值，结果不受影响。</li>
 <li>char是<strong>unsigned</strong>的系统中：<br>变量c定义为int时，没有问题，如果为char时，由于不接受负值，会出现问题。</li>
 </ul>
-</blockquote>
 <p>所以综合考虑，建议使用定义int型，保证程序兼容性。</p>
 
     
