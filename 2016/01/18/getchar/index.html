@@ -1,30 +1,27 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
   <title>变量类型定义之getchar() | EastingCW</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <meta name="author" content="EastingCW">
-  
-  
-    <meta name="description" content="getchar() : 在32位操作系统下，读取一个字节
 
-[程序1]123456789101112#include&amp;lt;stdio.h&amp;gt;main()&amp;#123;    int c;  //定义为int类型    c=getchar();    while(c!=EOF)    &amp;#123;        putchar(c);        c=getchar();    &amp;#125;">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   
+    <meta name="keywords" content="c语言,getchar,编程," />
+  
+
   <meta name="description" content="getchar() : 在32位操作系统下，读取一个字节
 
 [程序1]123456789101112#include&amp;lt;stdio.h&amp;gt;main()&amp;#123;    int c;  //定义为int类型    c=getchar();    while(c!=EOF)    &amp;#123;        putchar(c);        c=getchar();    &amp;#125;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="变量类型定义之getchar()">
-<meta property="og:url" content="http://eastingcw.coding.io/2016/01/18/getchar/index.html">
+<meta property="og:url" content="http://eastingcw.github.io/2016/01/18/getchar/index.html">
 <meta property="og:site_name" content="EastingCW">
 <meta property="og:description" content="getchar() : 在32位操作系统下，读取一个字节
 
 [程序1]123456789101112#include&amp;lt;stdio.h&amp;gt;main()&amp;#123;    int c;  //定义为int类型    c=getchar();    while(c!=EOF)    &amp;#123;        putchar(c);        c=getchar();    &amp;#125;">
-<meta property="og:updated_time" content="2016-01-19T11:55:25.140Z">
+<meta property="og:updated_time" content="2016-02-21T02:49:18.765Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="变量类型定义之getchar()">
 <meta name="twitter:description" content="getchar() : 在32位操作系统下，读取一个字节
@@ -32,126 +29,105 @@
 [程序1]123456789101112#include&amp;lt;stdio.h&amp;gt;main()&amp;#123;    int c;  //定义为int类型    c=getchar();    while(c!=EOF)    &amp;#123;        putchar(c);        c=getchar();    &amp;#125;">
   
   
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
   
+
+  
+
 </head>
 
 <body>
-  <div class="wrapper">
-    <header id="header">
-  <div class="title">
-    <h1><a href="/">EastingCW</a></h1>
-    <p><a href="/">师者，所以传道授业解惑也！</a></p>
-  </div>
-  <nav class="nav">
-    <ul>
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/archives">Archives</a></li>
-      
-        <li><a href="/about">About</a></li>
-      
-      
-    </ul>
-    <div class="clearfix"></div>
-  </nav>
-  <div class="clearfix"></div>
-</header>
-    <div class="content"><article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2016/01/18/getchar/">
-  <time datetime="2016-01-18T12:13:15.000Z">
-    Jan 18 2016
-  </time>
-</a>
-    
+  <div class="content-post">
+  <a class="avatar" href="/archives">
+    <img src="/images/avatar.jpg" alt="" />
+  </a>
+  <article id="post-getchar" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
     
   
-    <h1 class="title">变量类型定义之getchar()</h1>
+    <div class="article-title article" >
+      变量类型定义之getchar()
+    </div>
   
 
+
   </header>
-  
-  <div class="entry">
+
+  <div class="article-meta">
+    Jan 18 2016
+
+    <span> | </span>
+
+    <span class="article-author">EastingCW</span>
+
     
-      <blockquote>
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
 <p><strong>getchar()</strong> : 在32位操作系统下，读取一个字节</p>
 </blockquote>
 <p><strong>[程序1]</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> c;  <span class="comment">//定义为int类型</span></span><br><span class="line">    c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(c);</span><br><span class="line">        c=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>[程序2]</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">char</span> c; <span class="comment">//定义为char类型</span></span><br><span class="line">    c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(c);</span><br><span class="line">        c=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>对比以上两个程序可以发现，定义变量c的地方不同，其余都一样。</p>
-<pre><code>EOF是结束符（End Of File，文件结束）
-值必须足够大，除了能存储任何可能的字符外还要能存储文件结束符EOF。
-</code></pre><p><strong>char</strong> :  c/c++整型数据中比较古怪的一个，在标准中是unsigned。编辑器可实现为带符号的，也可实现为不带符号的。</p>
+<p>对比以上两个程序可以发现，定义变量c的地方不同，其余都一样。<br><strong>char</strong> :  c/c++整型数据中比较古怪的一个，在标准中是unsigned。编辑器可实现为带符号的，也可实现为不带符号的。</p>
+<p>采用中断调试可以发现，每个字节的范围：</p>
+<ol>
+<li>程序1：[0,255]</li>
+<li>程序2： </li>
+</ol>
 <ul>
-<li>char是<strong>signed</strong>的系统中：<br>EOF的值是-1，读取中文时，中断调试下，每次读取一个字节，定义为int时，变量c的值在0~127之外，＞127，定义为char时由于char是signed，所以能识别负值，结果不受影响。</li>
-<li>char是<strong>unsigned</strong>的系统中：<br>变量c定义为int时，没有问题，如果为char时，由于不接受负值，会出现问题。</li>
+<li>char是<strong>signed</strong>的系统中：[-127,127]</li>
+<li>char是<strong>unsigned</strong>的系统中：[0,127]</li>
 </ul>
-<p>所以综合考虑，建议使用定义int型，保证程序兼容性。</p>
+<p>我们可以发现，<strong>int</strong>型的范围和<strong>signed</strong>范围是等价的，而<strong>unsigned</strong>范围不能判断负数（或者是大于127的字符）。<br>所以综合考虑，建议使用<strong>int</strong>型，保证程序兼容性。</p>
+
+      
+    </div>
 
     
-  </div>
-  <footer>
-    
       
-      
-  <div class="tags">
-    <a class="tags-link" href="/tags/c语言/">c语言</a>, <a class="tags-link" href="/tags/getchar/">getchar</a>, <a class="tags-link" href="/tags/编程/">编程</a>
-  </div>
 
     
-    <div class="clearfix"></div>
-  </footer>
+
+  </div>
 </article>
 
 
-<section id="comment">
-  <h1 class="title">评论</h1>
-  <div class="ds-thread" data-title="变量类型定义之getchar()">
-  </div>
-</section>
+
+
+
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="变量类型定义之getchar()" data-url="http://eastingcw.github.io/2016/01/18/getchar/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
 </div>
-  </div>
-  <footer id="footer"><div class="copyright">
-  
-  &copy; 2016 <a href="/">EastingCW</a>
-  
-</div>
 
-<div class="clearfix"></div></footer>
   
-<script src="/js/scale.fix.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
 
-
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-  var duoshuoQuery = { short_name: 'eastingcw' };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+var duoshuoQuery = {short_name:"eastingcw"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+   || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
 </script>
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox();
-  })(jQuery);
-</script>
+<!-- 多说公共JS代码 end -->
 
 </body>
 </html>

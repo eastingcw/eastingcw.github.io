@@ -1,23 +1,16 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
   <title>二进制、十进制转换 | EastingCW</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <meta name="author" content="EastingCW">
-  
-  
-    <meta name="description" content="在讲转换之前，我们来了解下两种进制的概念。十进制是我们从小就开始学习的，可以说非常熟悉，之所以使用这么广泛，很有可能跟我们有十根手指有关。所谓【十进制】，就是：
 
-数值的每一位都由0~9组成，共有10种状态，逢十进一，为十进制
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-二进制在生活中可以说基本用不到，但是它是计算机底层的编码组成，就是所谓的机器语言。同样二进制的理解可以这样：
-
-数值的每一位都由0和1两种状态组成，逢二进一，为二进制">
   
+    <meta name="keywords" content="二进制,十进制,编程," />
+  
+
   <meta name="description" content="在讲转换之前，我们来了解下两种进制的概念。十进制是我们从小就开始学习的，可以说非常熟悉，之所以使用这么广泛，很有可能跟我们有十根手指有关。所谓【十进制】，就是：
 
 数值的每一位都由0~9组成，共有10种状态，逢十进一，为十进制
@@ -27,7 +20,7 @@
 数值的每一位都由0和1两种状态组成，逢二进一，为二进制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二进制、十进制转换">
-<meta property="og:url" content="http://eastingcw.coding.io/2016/01/17/twototen/index.html">
+<meta property="og:url" content="http://eastingcw.github.io/2016/01/17/twototen/index.html">
 <meta property="og:site_name" content="EastingCW">
 <meta property="og:description" content="在讲转换之前，我们来了解下两种进制的概念。十进制是我们从小就开始学习的，可以说非常熟悉，之所以使用这么广泛，很有可能跟我们有十根手指有关。所谓【十进制】，就是：
 
@@ -48,55 +41,54 @@
 数值的每一位都由0和1两种状态组成，逢二进一，为二进制">
   
   
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
   
+
+  
+
 </head>
 
 <body>
-  <div class="wrapper">
-    <header id="header">
-  <div class="title">
-    <h1><a href="/">EastingCW</a></h1>
-    <p><a href="/">师者，所以传道授业解惑也！</a></p>
-  </div>
-  <nav class="nav">
-    <ul>
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/archives">Archives</a></li>
-      
-        <li><a href="/about">About</a></li>
-      
-      
-    </ul>
-    <div class="clearfix"></div>
-  </nav>
-  <div class="clearfix"></div>
-</header>
-    <div class="content"><article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2016/01/17/twototen/">
-  <time datetime="2016-01-17T10:27:42.000Z">
-    Jan 17 2016
-  </time>
-</a>
-    
+  <div class="content-post">
+  <a class="avatar" href="/archives">
+    <img src="/images/avatar.jpg" alt="" />
+  </a>
+  <article id="post-twototen" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
     
   
-    <h1 class="title">二进制、十进制转换</h1>
+    <div class="article-title article" >
+      二进制、十进制转换
+    </div>
   
 
+
   </header>
-  
-  <div class="entry">
+
+  <div class="article-meta">
+    Jan 17 2016
+
+    <span> | </span>
+
+    <span class="article-author">EastingCW</span>
+
     
-      <p>在讲转换之前，我们来了解下两种进制的概念。十进制是我们从小就开始学习的，可以说非常熟悉，之所以使用这么广泛，很有可能跟我们有十根手指有关。所谓【十进制】，就是：</p>
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/default/">default</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在讲转换之前，我们来了解下两种进制的概念。十进制是我们从小就开始学习的，可以说非常熟悉，之所以使用这么广泛，很有可能跟我们有十根手指有关。所谓【十进制】，就是：</p>
 <blockquote>
 <p>数值的每一位都由0~9组成，共有10种状态，逢十进一，为<strong>十进制</strong></p>
 </blockquote>
@@ -118,67 +110,45 @@
 <h2 id="5B_u5341_u8FDB_u5236_5D-_26gt_3B_5B_u4E8C_u8FDB_u5236_5D"><a href="#5B_u5341_u8FDB_u5236_5D-_26gt_3B_5B_u4E8C_u8FDB_u5236_5D" class="headerlink" title="[十进制]-&gt;[二进制]"></a><strong>[十进制]-&gt;[二进制]</strong></h2><p>十进制转二进制其实不止一种方法，有除二取余法、凑数法等等，这里我们介绍<strong>[凑数法]</strong>。那什么是凑数法呢？我们知道在二进制中，每一位都是2的指数幂，所以我们可以将一个十进制数先拆开，凑成几个2的指数的和，然后将拆开的数的指数填入对应二进制位。先来看个<em>例子</em>：<br><em>123<br>=64+32+16+8+2+1<br>=2^6+2^5+2^4+2^3+2^1+2^0<br>=2^(7-1)+2^(6-1)+2^(5-1)+2^(4-1)+2^(2-1)+2^(1-1)<br>=1111011</em></p>
 <p>从上面可以看出，第7、6、5、4、2、1位上有1值，其余为0，所以我们将这些位填上1，第三位填入0，结果即为1111011。</p>
 
-    
-  </div>
-  <footer>
-    
       
-  <div class="categories">
-    <a class="categories-link" href="/categories/default/">default</a>
-  </div>
-
-      
-  <div class="tags">
-    <a class="tags-link" href="/tags/二进制/">二进制</a>, <a class="tags-link" href="/tags/十进制/">十进制</a>, <a class="tags-link" href="/tags/编程/">编程</a>
-  </div>
+    </div>
 
     
-    <div class="clearfix"></div>
-  </footer>
+      
+
+    
+
+  </div>
 </article>
 
 
-<section id="comment">
-  <h1 class="title">评论</h1>
-  <div class="ds-thread" data-title="二进制、十进制转换">
-  </div>
-</section>
+
+
+
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="二进制、十进制转换" data-url="http://eastingcw.github.io/2016/01/17/twototen/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
 </div>
-  </div>
-  <footer id="footer"><div class="copyright">
-  
-  &copy; 2016 <a href="/">EastingCW</a>
-  
-</div>
 
-<div class="clearfix"></div></footer>
   
-<script src="/js/scale.fix.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
 
-
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-  var duoshuoQuery = { short_name: 'eastingcw' };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+var duoshuoQuery = {short_name:"eastingcw"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+   || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
 </script>
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox();
-  })(jQuery);
-</script>
+<!-- 多说公共JS代码 end -->
 
 </body>
 </html>
