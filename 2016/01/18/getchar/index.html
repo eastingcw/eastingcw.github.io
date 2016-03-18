@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="eastingcw,教师,学习,计算机" />
+    <meta name="keywords" content="char,c语言," />
   
 
   <meta name="description" content="getchar() : 在32位操作系统下，读取一个字节
@@ -21,19 +21,23 @@
 <meta property="og:description" content="getchar() : 在32位操作系统下，读取一个字节
 
 [程序1]123456789101112#include&amp;lt;stdio.h&amp;gt;main()&amp;#123;    int c;  //定义为int类型    c=getchar();    while(c!=EOF)    &amp;#123;        putchar(c);        c=getchar();    &amp;#125;">
-<meta property="og:updated_time" content="2016-03-05T03:14:47.828Z">
+<meta property="og:updated_time" content="2016-03-18T09:54:42.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="变量类型定义之getchar()">
 <meta name="twitter:description" content="getchar() : 在32位操作系统下，读取一个字节
 
 [程序1]123456789101112#include&amp;lt;stdio.h&amp;gt;main()&amp;#123;    int c;  //定义为int类型    c=getchar();    while(c!=EOF)    &amp;#123;        putchar(c);        c=getchar();    &amp;#125;">
+
   
+
+  
+    <link rel="icon" href="/favicon.ico">
   
 
   
 
+  <link href="/css/styles.css?v=8775905c" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/styles.css" type="text/css">
   
 
   
@@ -41,43 +45,104 @@
 </head>
 
 <body>
-  <div class="content-post">
-  <a class="avatar" href="/archives">
-    <img src="/images/avatar.jpg" alt="" />
-  </a>
-  <article id="post-getchar" class="article article-type-post" itemscope itemprop="blogPost">
 
+  
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-getchar" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
-    
-  
-    <div class="article-title article" >
-      变量类型定义之getchar()
+    <h1 class="post-title">变量类型定义之getchar()</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2016.01.18</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>EastingCW</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/编程基础/">编程基础</a>
+  </span>
+
+
+
+      
+
     </div>
-  
-
-
   </header>
 
-  <div class="article-meta">
-    2016-01-18
-
-    <span> | </span>
-
-    <span class="article-author">EastingCW</span>
-
+  <div class="article-content">
     
-<span> | </span>
-<span class="article-category">
-    <a class="article-category-link" href="/categories/编程基础/">编程基础</a>
-</span>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
+      <blockquote>
 <p><strong>getchar()</strong> : 在32位操作系统下，读取一个字节</p>
 </blockquote>
 <p><strong>[程序1]</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> c;  <span class="comment">//定义为int类型</span></span><br><span class="line">    c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(c);</span><br><span class="line">        c=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -94,21 +159,82 @@
 </ul>
 <p>我们可以发现，<strong>int</strong>型的范围和<strong>signed</strong>范围是等价的，而<strong>unsigned</strong>范围不能判断负数（或者是大于127的字符）。<br>所以综合考虑，建议使用<strong>int</strong>型，保证程序兼容性。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
 
+  <div class="modal" id="modal-one" aria-hidden="true">
+  <a href="#close" class="cover" aria-hidden="true"></a>
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">关闭</a>
+    </div>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="" data-title="变量类型定义之getchar()" data-url="http://eastingcw.github.io/2016/01/18/getchar/index.html"></div>
@@ -116,23 +242,56 @@
   </section>
 
 
-</div>
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"eastingcw"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
 
   
 
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"eastingcw"};
-(function() {
-  var ds = document.createElement('script');
-  ds.type = 'text/javascript';ds.async = true;
-  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-  ds.charset = 'UTF-8';
-  (document.getElementsByTagName('head')[0]
-   || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/fastclick.js', function() {
+      loadScript('/js/app.js', function() {
+        // load success
+      });
+    });
+  }
 </script>
-<!-- 多说公共JS代码 end -->
 
 </body>
 </html>
